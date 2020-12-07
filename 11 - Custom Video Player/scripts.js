@@ -40,11 +40,11 @@ function scrub(e){
 function toggleFullscreen(e) {
     isFullscreen = !isFullscreen;
 
-    if ( isFullscreen && e.type === 'click' ) {
+    if(isFullscreen && e.type == 'click') {
         video.requestFullscreen();
     }
 
-    if ( ! document.fullscreenElement ) {
+    if(!document.fullscreenElement) {
         isFullscreen = false;
     }
 }
